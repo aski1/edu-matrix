@@ -1,5 +1,7 @@
 namespace Edu
 {
+	// from aski
+	
     class Matrix
     {
         public double[,] Items { get; private set; }
@@ -50,7 +52,7 @@ namespace Edu
             {
                 for(int col = 0; col < m.Items.GetLength(1); col++)
                 {
-                    m.Items[row, col] = rnd.Next(-100, 100);
+                    m.Items[row, col] = rnd.Next(-10, 10);
                 }
             }
 
