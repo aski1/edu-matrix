@@ -127,5 +127,53 @@ namespace Edu
 
             return res;
         }
+
+        public static Matrix operator -(Matrix m)
+        {
+            Matrix res = new Matrix(m.RowCount, m.ColCount);
+            for(int row = 0; row < res.RowCount; row++)
+            {
+                for(int col = 0; col < res.ColCount; col++)
+                    res.Items[row, col] = -m.Items[row, col];
+            }
+            return res;
+        }
+
+        public static Matrix operator -(Matrix m1, Matrix m2)
+        {
+            if(m1.RowCount != m2.RowCount || m1.ColCount != m2.ColCount)
+                throw new Exception("Матрицы разного размера");
+
+            Matrix res = new Matrix(m1.RowCount, m1.ColCount);
+
+            for(int row = 0; row < res.RowCount; row++)
+            {
+                for(int col = 0; col < res.ColCount; col++)
+                    res.Items[row, col] = m1.Items[row, col] - m2.Items[row, col];
+            }
+
+            return res;
+        }
+
+        public static Matrix operator *(Matrix m1, Matrix m2)
+        {
+            if(m1.ColCount != m2.RowCount)
+                throw new Exception("Количество столбцов первой матрицы несоответствует количеству строк второй матрицы");
+
+            Matrix res = new Matrix(m1.RowCount, m2.ColCount);
+
+            for(int row = 0; row < res.RowCount; row++)
+            {
+                for(int col = 0; col < res.ColCount; col++)
+                {
+                    for(int i = 0; i < m1.ColCount; i++)
+                    {
+                        res.Items[row, col] += m1.Items[row, i] * m2.Items[i,col];
+                    }
+                }
+            }
+
+            return res;
+        }
     }   
 }
