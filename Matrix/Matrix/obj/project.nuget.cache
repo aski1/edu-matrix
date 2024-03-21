@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1fHRSNoVo36qE6auhuwd3K1WM6lFHVBCa1fj8INamMHbZyDqlF+iC+rYCqhqEZ+wYchbzXX4BqCKrBXiZaZoWg==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Artyom\\Desktop\\Matrix\\Matrix.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.16\\microsoft.netcore.app.host.win-x64.7.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
